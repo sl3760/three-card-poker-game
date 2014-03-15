@@ -1,0 +1,2 @@
+serviceClass: com.poker.client.PokerService
+path: FC8F53146147FD14DE24363E5BDDC404.gwt.rpc

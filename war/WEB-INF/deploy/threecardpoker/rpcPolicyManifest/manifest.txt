@@ -1,0 +1,5 @@
+# Module threecardpoker
+# RPC service class, partial path of RPC policy file
+com.google.gwt.user.client.rpc.XsrfTokenService, CCA65B31464BDB27545C23C142FEEEF8.gwt.rpc
+com.poker.client.PokerService, FC8F53146147FD14DE24363E5BDDC404.gwt.rpc
+com.poker.client.LoginService, 9FB2334CCAC11399FFB5991191B3B87E.gwt.rpc

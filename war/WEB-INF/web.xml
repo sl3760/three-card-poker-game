@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>PokerGame.html</welcome-file>
+  </welcome-file-list>
+
+
+  <servlet>
+  <servlet-name>LoginService</servlet-name>
+  <servlet-class>com.poker.server.LoginServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>LoginService</servlet-name>
+   <url-pattern>/threecardpoker/login</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+  <servlet-name>PokerService</servlet-name>
+  <servlet-class>com.poker.server.PokerServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>PokerService</servlet-name>
+   <url-pattern>/threecardpoker/PokerService</url-pattern>
+   </servlet-mapping>
+   
+    <filter>
+        <filter-name>ObjectifyFilter</filter-name>
+        <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+    </filter>
+     <filter-mapping>
+        <filter-name>ObjectifyFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+     </filter-mapping>
+     
+     <servlet>
+       <servlet-name>xsrf</servlet-name>
+       <servlet-class>
+         com.google.gwt.user.server.rpc.XsrfTokenServiceServlet
+       </servlet-class>
+     </servlet>
+     <servlet-mapping>
+        <servlet-name>xsrf</servlet-name>
+        <url-pattern>/threecardpoker/xsrf</url-pattern>
+     </servlet-mapping>
+     
+     <context-param>
+         <param-name>gwt.xsrf.session_cookie_name</param-name>
+        <param-value>JSESSIONID</param-value>
+     </context-param>
+     
+</web-app>

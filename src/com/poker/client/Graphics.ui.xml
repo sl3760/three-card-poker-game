@@ -1,0 +1,83 @@
+ <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	
+	 <g:VerticalPanel>
+	  <g:HorizontalPanel>
+        <g:AbsolutePanel ui:field="backgroundArea"></g:AbsolutePanel>
+         <g:VerticalPanel>
+         <g:Anchor ui:field="signOutLink" />
+         
+         <g:Label ui:field="Connect" text=" "></g:Label>
+        
+         <g:Label ui:field="Email" text=" "></g:Label>
+        
+         <g:Label ui:field="NickName" text=" "></g:Label>
+         
+         <g:Label ui:field="rank" text=" "></g:Label>
+         
+         <g:Label ui:field="OtherEmail" text=" "></g:Label>
+         
+         <g:Label ui:field="OtherNickName" text=" "></g:Label>
+         
+         <g:Label ui:field="Turn" text=" "></g:Label> 
+          
+         <g:Label ui:field="gameTurn" text=" "></g:Label> 
+         
+         <g:Label ui:field="computerChoose" text=" "></g:Label>
+         
+         <g:Label ui:field="computerChip" text=" "></g:Label>
+         
+         <g:Label ui:field="computerDecision" text=" "></g:Label>
+         
+         <g:Label ui:field="gameWarning" text=" "></g:Label> 
+                  
+         <g:Label ui:field="gameInfo" text=" "></g:Label> 
+          
+         </g:VerticalPanel>
+      </g:HorizontalPanel>
+     <g:HTMLPanel>
+     &nbsp;&nbsp;
+     </g:HTMLPanel>
+    
+     <g:Label ui:field="balance1" text=""></g:Label>
+     <g:Label ui:field="balance2" text=""></g:Label> 
+     <g:HorizontalPanel ui:field="startPanel">
+      <g:Button ui:field="AIPlay" text=""/>
+      <g:Button ui:field="start" text=""/>
+      <g:Button ui:field="restart" text=""/>
+      <g:Button ui:field="save" text=""/>
+      <g:Button ui:field="load" text=""/>
+      <g:TextBox ui:field="emailInput"></g:TextBox>
+      <g:Button ui:field="newMatch"></g:Button>
+      <g:Button ui:field="deleteMatch"></g:Button>
+       <g:ListBox ui:field="matchList"></g:ListBox>
+     </g:HorizontalPanel>
+    
+        <g:HorizontalPanel ui:field="buttonPanel">
+        
+	    <g:HorizontalPanel ui:field="buttonChoosePanel">
+        <g:Button ui:field="PairsPlusBtn" text=""/>
+       
+        <g:Button ui:field="AnteBtn" text=""/>
+        
+        <g:Button ui:field="PairsPlusAnteBtn" text=""/>
+        </g:HorizontalPanel>
+        
+        <g:HorizontalPanel ui:field="buttonDecisionPanel">
+        <g:Button ui:field="dealBtn" text=""/>
+       
+        <g:Button ui:field="playBtn" text=""/>
+        
+        <g:Button ui:field="foldBtn" text=""/>
+        
+        <g:Button ui:field="cancel" text=""/>
+        </g:HorizontalPanel>
+        
+        </g:HorizontalPanel>
+        
+     </g:VerticalPanel>
+</ui:UiBinder> 

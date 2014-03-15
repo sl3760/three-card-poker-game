@@ -1,0 +1,2 @@
+serviceClass: com.poker.client.LoginService
+path: 9FB2334CCAC11399FFB5991191B3B87E.gwt.rpc
